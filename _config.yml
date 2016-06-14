@@ -13,9 +13,9 @@ links:
   - name:         GitHub
     url:          http://github.com/dinghing
     external:     true
-highlighter:      pygments
+highlighter:      rouge
 permalink:        pretty
-markdown:         redcarpet
+markdown:         kramdown
 redcarpet:
   extensions:
     - smart

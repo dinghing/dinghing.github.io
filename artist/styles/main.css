@@ -1,0 +1,84 @@
+body,
+html {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #3d464d;
+}
+a {
+  text-decoration: none;
+  color: #258fb8;
+  transition: color 0.7s;
+}
+a:hover {
+  color: #4eb9e9;
+}
+.clear {
+  clear: both;
+}
+header {
+  margin: 0 auto;
+  width: 900px;
+}
+header .sketch {
+  margin: 30px 0 30px 0;
+}
+header .sketch a {
+  color: #3d464d;
+}
+header .navbar {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+header .navbar ul {
+  list-style: none;
+  height: 18px;
+  padding: 0;
+}
+header .navbar ul li {
+  list-style: none;
+  float: left;
+  display: inline-block;
+  padding: 0 25px 0 0;
+  text-transform: capitalize;
+}
+main {
+  width: 900px;
+  margin: 0 auto;
+}
+main h1 {
+  font-size: 50px;
+  text-align: center;
+}
+main article {
+  letter-spacing: 0.2px;
+  line-height: 30px;
+  width: 600px;
+  margin: 0 auto;
+}
+main ul.artist {
+  list-style: none;
+  padding: 0;
+}
+main ul.artist li {
+  list-style: none;
+  float: left;
+  display: inline-block;
+  margin: 0 30px 30px 0;
+  width: 256px;
+  height: 144px;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  overflow: hidden;
+}
+main ul.artist li .img {
+  width: 256px;
+  height: 144px;
+  background-size: cover;
+  background-position: center center;
+}
+footer {
+  padding-top: 10px;
+  margin: 50px auto;
+  border-top: 1px solid #eee;
+  width: 900px;
+}

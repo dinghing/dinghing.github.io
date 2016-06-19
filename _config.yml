@@ -15,7 +15,6 @@ google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 links:
   - name:         About
 <<<<<<< HEAD
-    url:          /about
 =======
     url:          http://www.mymunan.com/2016/aboutme
 >>>>>>> origin/master

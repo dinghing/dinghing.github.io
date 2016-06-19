@@ -25,6 +25,9 @@ links:
   - name:         GitHub
     url:          http://github.com/dinghing
     external:     true
+  - name:         Project
+    url:          https://github.com/dinghing/dinghing.github.io/tree/master/artist/artist
+    external:     true
 <<<<<<< HEAD
 highlighter:      pygments
 permalink:        pretty

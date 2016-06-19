@@ -1,23 +1,39 @@
+<<<<<<< HEAD
 title:            Scribble
 description:      A jekyll theme. Because I scribble.
-url:              www.mymunan.com/2016/aboutme 
+url:              www.mymunan.com/2016/aboutme
 signoff:          dinghing
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+=======
+title:            dinghing
+signoff:          待我技术纯熟，娶你为妻可好
+disqus_shortname: dinghing  # disqus comment thread for post header options. ( leave blank if unwanted. )
+>>>>>>> origin/master
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
 links:
   - name:         About
+<<<<<<< HEAD
     url:          /about
+=======
+    url:          http://www.mymunan.com/2016/aboutme
+>>>>>>> origin/master
   - name:         Blog
     url:          http://www.cnblogs.com/dinghing154/
     external:     true
   - name:         GitHub
     url:          http://github.com/dinghing
     external:     true
+<<<<<<< HEAD
 highlighter:      pygments
 permalink:        pretty
 markdown:         redcarpet
+=======
+highlighter:      rouge
+permalink:        pretty
+markdown:         kramdown
+>>>>>>> origin/master
 redcarpet:
   extensions:
     - smart

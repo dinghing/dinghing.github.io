@@ -6,7 +6,7 @@ signoff:          dinghing
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
 =======
 title:            dinghing
-signoff:          待我技术纯熟，娶你为妻可好
+signoff:          dinghing
 disqus_shortname: dinghing  # disqus comment thread for post header options. ( leave blank if unwanted. )
 >>>>>>> origin/master
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.

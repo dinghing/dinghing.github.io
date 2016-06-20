@@ -11,7 +11,7 @@ links:
     url:          http://www.mymunan.com/2016/aboutme
     external:     true
   - name:         Home
-    url:          http://dinghing.github.io
+    url:          /
   - name:         Blog(old)
     url:          http://www.cnblogs.com/dinghing154/
     external:     true

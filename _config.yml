@@ -9,7 +9,10 @@ google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 links:
   - name:         About
     url:          http://www.mymunan.com/2016/aboutme
-  - name:         Blog
+    external:     true
+  - name:         Home
+    url:          http://dinghing.github.io
+  - name:         Blog(old)
     url:          http://www.cnblogs.com/dinghing154/
     external:     true
   - name:         GitHub

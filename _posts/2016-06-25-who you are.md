@@ -7,7 +7,7 @@ disqus: y
 
 At 23,I moved to japan for work.  
 
-It is a very exciting thing for one have not been aborad. 
+It is a very exciting thing for one had not been aborad. 
 
 Of couse,the most hard time is to learn a new language since you have to do . 
 

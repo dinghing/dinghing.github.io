@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It Was Not You
+title: You can be who you are
 date: 2016-06-25 21:22:31
 disqus: y
 ---  

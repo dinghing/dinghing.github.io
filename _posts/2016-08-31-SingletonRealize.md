@@ -18,6 +18,7 @@ disqus: y
 * 资源共享类：多次家在资源可能会影响性能，这时就可以使用单例来减少资源加载 
 
 C++中单例模式的实现方式有很多种，从最初的Lazy Singleton到线程安全，双检锁模式等等。
+
 ### Lazy Singleton
 	class Singleton  
 	{

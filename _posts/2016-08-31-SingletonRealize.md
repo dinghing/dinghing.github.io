@@ -63,6 +63,7 @@ C++中单例模式的实现方式有很多种，从最初的Lazy Singleton到线
     private:
         static Singleton instance;
 	};
+	
 最大的特点就是程序开始时实例就生成了（主要原因是不使用指针而实用静态变量）
 虽然代码没有太大变但是这个模式是线程安全的，原因就在于初始化是在主函数之前进行的。
 但是static对象的初始化顺序不确定导致生成为定义的实例的可能性也存在
@@ -82,6 +83,7 @@ C++中单例模式的实现方式有很多种，从最初的Lazy Singleton到线
         Singleton(const Singleton&);
         Singleton& operator=(const Singleton&);
 	};
+	
 一种简单优雅的单例模式（代码也是极其的简单）
 单例模式中的实例也使用了Static声明，确保实例的有效性。当第一次访问Instance时实例得到创建
 
@@ -105,6 +107,7 @@ C++中单例模式的实现方式有很多种，从最初的Lazy Singleton到线
         static pthread_once_t ponce_;
        static T* value_;
 	};
+	
 多线程编程环境下，使用pthread_once会出现在多个线程中，但是初始化只会执行一次，也就确保了线程安全
 
 ### iOS中的单例模式
@@ -127,6 +130,7 @@ C++中单例模式的实现方式有很多种，从最初的Lazy Singleton到线
     });
     return _sharedInstance;
 	}
+	
 关注第三步，使用了dispatch_once_t来确保实例的初始化只执行一次。那么还原到C++中，有没有觉得和pthread_once模式有那么一丝相似
 
 其实在很遥远的古代，iOS中也会使用pthread_once，因为 dispatch_once_t 更容易使用并且不易出错，所以你永远都不会再用到 pthread_once 了。

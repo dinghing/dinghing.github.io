@@ -5,8 +5,6 @@ date: 2016-09-13 16:27:31
 disqus: y
 ---
 
-# Unique Binary Search Trees I and II解题报告
-
 ## Given n, how many structurally unique BST's (binary search trees) that store values 1...n?
 
 计算从1到n可以生成多少个排序二叉树。

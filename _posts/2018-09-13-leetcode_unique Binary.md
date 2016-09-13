@@ -26,7 +26,8 @@ disqus: y
         return G[n];
     }
 
-##Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1...n.
+
+## Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1...n.
 在上面的基础上输出所有结果。
 整体思想没有改变，就是递归的过程中把所有的情况储存在一个数组中。
 

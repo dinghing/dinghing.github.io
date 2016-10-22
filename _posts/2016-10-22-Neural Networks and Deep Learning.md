@@ -20,29 +20,33 @@ disqus: y
 
 ### 具体过程 
 1. 构造预测函数
-刚才也说到了在神经网络和深度学习这本书中并没有具体介绍预测函数的实现过程，只是简单的说了一个Simgmoid函数,但是并没有解释缘由。  
-![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/1.png)    
+刚才也说到了在神经网络和深度学习这本书中并没有具体介绍预测函数的实现过程，只是简单的说了一个Simgmoid函数,但是并没有解释缘由。    
+![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/1.png)      
 
 这个函数有一个很好的特性是可以根据输入的值得到两种类型的结果，线性的和非线性的。      
 构造函数：  
-  ![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/2.png)  
+  ![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/2.png)    
 hθ(x)函数的值有特殊的含义，它表示结果取1的概率，因此对于输入x分类结果为类别1和类别0的概率分别为：  
-![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/3-1.png)  
+![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/3-1.png) 
+
 ![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/3-2.png)
 
 2. 构造损失函数  
 构造函数是根据预测函数来计算的到的：  
-![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/5.png)  
+![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/5.png)    
 构造函数就是在预测函数的基础上运用[最大似然估计](https://zh.wikipedia.org/wiki/最大似然估计)推导出最终形式：  
-![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/4-1.png)    
-![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/4-2.png)  
+![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/4-1.png)     
+
+![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/4-2.png)
+  
 具体的推到过程可以自己试一下。不是很复杂。
 3. 如何根据最终形式的损失函数来计算预测函数的准确性
 求解损失函数的最小值使用的就是梯度下降算法.
-求J(θ)的最小值可以使用梯度下降法，根据梯度下降法可得θ的更新过程：  
-![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/6.png) 
+求J(θ)的最小值可以使用梯度下降法，根据梯度下降法可得θ的更新过程：    
+![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/6.png)   
+
 式中为α学习速率，学习速率也是一个需要设定好的值，他会决定机器学习的准备率和速度。
-经过最终推导我们可以得到一下变化函数  
+经过最终推导我们可以得到一下变化函数    
 ![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/7.png)
 
 ###  代码分析

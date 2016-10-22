@@ -37,7 +37,7 @@ hθ(x)函数的值有特殊的含义，它表示结果取1的概率，因此对�
 ![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/4-2.png)  
 具体的推到过程可以自己试一下。不是很复杂。  
 
-3. 梯度下降运算
+3. 梯度下降运算  
 求解损失函数的最小值使用的就是梯度下降算法.
 求J(θ)的最小值可以使用梯度下降法，根据梯度下降法可得θ的更新过程：    
 ![text](https://github.com/dinghing/dinghing.github.io/blob/master/images/6.png)   

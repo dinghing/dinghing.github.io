@@ -21,7 +21,8 @@ disqus: y
 ### 具体过程 
 1. 构造预测函数
 刚才也说到了在神经网络和深度学习这本书中并没有具体介绍预测函数的实现过程，只是简单的说了一个Simgmoid函数,但是并没有解释缘由。    
-![text](https://dinghing.github.io/images/1.png)        
+![text](https://dinghing.github.io/images/1.png)  
+
 这个函数有一个很好的特性是可以根据输入的值得到两种类型的结果，线性的和非线性的。      
 构造函数：  
 ![text](https://dinghing.github.io/images/2.png)    

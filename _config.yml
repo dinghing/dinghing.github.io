@@ -7,7 +7,7 @@ facebook_appid:   # appid for like button, remove from /_includes/share.html if 
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
 links:
-  - name:         About
+  - name:         About me
     url:          https://dinghing.github.io/aboutme
     external:     true
   - name:         Home

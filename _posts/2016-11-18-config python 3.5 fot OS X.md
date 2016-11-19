@@ -6,7 +6,8 @@ disqus: y
 ---
 ### 安装pyenv
 为了能顺利的将系统的python和下载的python版本呼唤，使用Homebrew下载pyenv  
-	> brew install pyenv  
+
+	brew install pyenv  
 
 设置默认路径   
 
@@ -16,7 +17,8 @@ disqus: y
 
 ### 安装Python
 使用pyenv查看可安装Python的版本   
- 	> pyenv install --list
+
+	pyenv install --list
 
 我的情况下可以看到如下几个最新的版本  
 

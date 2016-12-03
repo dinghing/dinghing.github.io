@@ -22,10 +22,11 @@ disqus: y
 
 根据训练数据中的期待结果和预测结果不断的修改权重即可。那么具体到项目中应该怎么修改w呢
 
-  1. 随机为w1,w2,...wn设置一个值
-  2. 不断重复以下步骤
-    * 输入训练数据，如果结果不正确就进行修改
-    * 当所有的训练数据的结果都正确时就结束运算
+  1. 随机为w1,w2,...wn设置一个值  
+  2. 不断重复以下步骤  
+
+    * 输入训练数据，如果结果不正确就进行修改  
+    * 当所有的训练数据的结果都正确时就结束运算  
 思想很简单，那么［不正确就修改］这一段，在简单的感知机中能够很简单的修改，那么在深度神经网络中的时候该怎么计算呢
 
 ### 梯度下降法
@@ -34,10 +35,10 @@ disqus: y
 w和误差函数的关系如下图所示
 ![text](https://dinghing.github.io/images/deeplearning01/03.png)
 曲线最下方的w的值即为一次计算所期望的值,如果仔细分析我们可以知道这种计算就是微分计算
-而这种变化趋势就是微分计算的值
-![text](https://dinghing.github.io/images/deeplearning01/04.png)
-那么wi的变化过程即为
-![text](https://dinghing.github.io/images/deeplearning01/05.png)
+而这种变化趋势就是微分计算的值  
+![text](https://dinghing.github.io/images/deeplearning01/04.png)  
+那么wi的变化过程即为  
+![text](https://dinghing.github.io/images/deeplearning01/05.png)  
 简答的理解就是当变化趋势为负时wi朝正直方向移动，反之亦然.但是当变化趋势很大的时候wi的变化就会很大，
 而变化趋势很小的时候wi的变化就又会很小。这样的计算会让整个过程很难收敛，因此我们会设置一个比较小的正数参数
 来参与计算。
@@ -69,17 +70,18 @@ A是一个垃圾邮件，而现在的分类情况也是正确的，那么wx>0。
 -twx = -wx<0。因此E = max(0,-twx) = 0。误差函数的结果为0。
 因此对于误差函数，当点x被正确分类成功的时候可以得到误差值0，相反则是|wx|。
 
-那么|wx|到底代表着什么呢？简单的理解就是这个点和直线wx=0的距离。没记错的话这个应该是高中知识
+那么'|wx|'到底代表着什么呢？  
+简单的理解就是这个点和直线wx=0的距离。没记错的话这个应该是高中知识
 
 ### 感知机算法的实现
 根据上文介绍的权重的更新的函数
-![text](https://dinghing.github.io/images/deeplearning01/09.png)
-对于误差函数E = max(0,-twx)，当误差不为0 的时候就返回-twx。我们来简单推算以下。
-![text](https://dinghing.github.io/images/deeplearning01/10.png)
-因此可以得到更新后的运算公式:
-![text](https://dinghing.github.io/images/deeplearning01/11.png)
-权重整体来表达的时候如下:  
-![text](https://dinghing.github.io/images/deeplearning01/12.png)
+![text](https://dinghing.github.io/images/deeplearning01/09.png)  
+对于误差函数E = max(0,-twx)，当误差不为0 的时候就返回-twx。我们来简单推算以下。  
+![text](https://dinghing.github.io/images/deeplearning01/10.png)  
+因此可以得到更新后的运算公式:  
+![text](https://dinghing.github.io/images/deeplearning01/11.png)  
+权重整体来表达的时候如下:    
+![text](https://dinghing.github.io/images/deeplearning01/12.png)  
 
 根据以上的推论我们可以得到一个感知机的伪代码如下:
 
@@ -87,7 +89,7 @@ A是一个垃圾邮件，而现在的分类情况也是正确的，那么wx>0。
 * 输入每一个训练数据
   * 输入的训练数据所得到的结果与期望值是否一致
     * 一致，进行下一组运算
-    * 不一致，按照![text](https://dinghing.github.io/images/deeplearning01/12.png)来进行运算
+    * 不一致，按照w <- w + ptx 来进行运算
 * 在上一组循环运算中w的值是否发生了改变
   * 被改变了，那么再重复一此上述的循环
   * 没有改变（所有的值都是期望值）,训练结束
@@ -100,9 +102,9 @@ _提示，这节对于这篇文章没有太多帮助，主要为了下一篇文�
 ![text](https://dinghing.github.io/images/deeplearning01/13.png)
 决定输出值的阀值又被称为激活参数。简单来说激活参数的表达式如下f(u)=u。
 类似于垃圾邮件分类我们可以有如下表达式:
-![text](https://dinghing.github.io/images/deeplearning01/14.png)
-用图表示的时候如下:
-![text](https://dinghing.github.io/images/deeplearning01/15.png)
+![text](https://dinghing.github.io/images/deeplearning01/14.png)  
+用图表示的时候如下:  
+![text](https://dinghing.github.io/images/deeplearning01/15.png)  
 换成我们上面使用的－1和1 的形式
 ![text](https://dinghing.github.io/images/deeplearning01/16.png)
 ![text](https://dinghing.github.io/images/deeplearning01/17.png)

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: 多层感知机
+title: 机器学习--多层感知机
 date: 2016-12-04 16:27:31
 disqus: y
 ---
 
 ### 简单的感知机的界限
-上一节介绍了一个简单的感知机的运作过程，如下图:
-![text](01)
+上一节介绍了一个简单的感知机的运作过程，如下图:  
+
+![text](https://dinghing.github.io/images/deeplearning02/01.png)  
 由于输出的是0和1，所以激活函数f(u)的结果也是0或者1。
 
 虽然简单的感知机可以解决一些问题，但是当涉及到比较复杂的问题的时候简单的感知机明显无法
@@ -27,11 +28,13 @@ disqus: y
 对于简单的感知机，输入值x1,x2我们假设存在x2 = -x1 + 1。按照感知机常用的表达式
 w0 + w1x1 + w2x2 = 0，我们可以换算成-1 + x1 +x2 ＝ 0。那么对于下图中的左边红色点可以知道
 -1 + x1 +x2 > 0 而右边的蓝色点 -1 + x1 +x2 < 0。也就是我们的到的权重为
-w = (-1,1,1)时，我们就可以计算OR运算了。
-![text](02)
+w = (-1,1,1)时，我们就可以计算OR运算了。  
 
-对于AND运算也可以使用同样的推导方式。
-![text](03)
+![text](https://dinghing.github.io/images/deeplearning02/02.png)
+
+对于AND运算也可以使用同样的推导方式。  
+
+![text](https://dinghing.github.io/images/deeplearning02/03.png)
 
 但是对于XOR运算就不一样了。
 
@@ -41,18 +44,23 @@ w = (-1,1,1)时，我们就可以计算OR运算了。
 1 XOR 0 = 1
 0 XOR 1 = 1
 0 XOR 0 = 0
-感觉有点奇怪，用简单的感知机好像无法计算吧。
-![text](04)
+感觉有点奇怪，用简单的感知机好像无法计算吧。  
+
+![text](https://dinghing.github.io/images/deeplearning02/04.png)
 
 ####多层感知机
 x1 OXR x2的表达可以换成以下的计算方式：
 
     x1 XOR x2 = (x1 OR x2) AND (x1 NAND x2)
 
-对于上面这个运算，我们用感知机的图展示出来是这个样子的。
-![text](05)
-整理在一起就是这样的一个表达了。
-![text](06)
+对于上面这个运算，我们用感知机的图展示出来是这个样子的。  
+
+![text](https://dinghing.github.io/images/deeplearning02/05.png)  
+
+整理在一起就是这样的一个表达了。  
+
+![text](https://dinghing.github.io/images/deeplearning02/06.png)  
+
 使用这种多层感知机就可以解决那些使用线性方程所无法解决的问题了。当然不止是XOR这种3层结构，
 还可以使用4层，5层甚至更多。当然都是视问题而定。
 当然对于这种XOR问题，我们基本看一眼就知道权重是什么，在实际的训练时，我们只可能输入数据和期待结果，对于中间层需要什么

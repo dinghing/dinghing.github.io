@@ -4,6 +4,13 @@
     <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
     <title>{{ page.title }} - {{ site.title }}</title>
     {% include head.html %}
+{#     {% if page.use_math %}
+    {% include mathjax_support %}
+    {% endif %} #}
+
+    <script type="text/javascript"  
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+   
   </head>
   <body>
     {% include header.html %}

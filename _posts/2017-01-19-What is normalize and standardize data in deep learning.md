@@ -3,13 +3,13 @@ layout: post
 title: What is normalize and standardize data in deep learning
 date: 2017-01-19 22:35:31
 disqus: y
+use_math: true
 ---
 ### What
 #### Normalize Data  
-
 The common method is to map the data to [0,1] by linear transformation of the original data, the transformation function is:
 $$
-\x'=\frac{x-\min}{\max-\min}
+x'=\frac{x-\min}{\max-\min}
 $$
 
 Below is an implementation of this in a function called normalize_dataset() that normalizes values of a provided dataset
@@ -25,7 +25,7 @@ Below is an implementation of this in a function called normalize_dataset() that
 Commonly used method is the z-score standardization, after processing the data mean is 0, the standard deviation is 1, the processing method is:
 
 $$
-\x'=\frac{x-\mu}{\sigma}
+x'=\frac{x-\mu}{\sigma}
 $$
 
 Where μ is the mean of the sample and σ is the standard deviation of the sample, which can be estimated from the existing samples. In the case of existing samples is relatively stable, suitable for modern noisy large data scenarios

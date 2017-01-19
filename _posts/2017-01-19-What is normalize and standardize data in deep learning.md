@@ -5,7 +5,7 @@ date: 2017-01-19 22:35:31
 disqus: y
 ---
 ### What
-#### Normalize Data
+#### Normalize Data  
 The common method is to map the data to [0,1] by linear transformation of the original data, the transformation function is:
 
 $$x'=\frac{x-\min}{\max-\min}$$

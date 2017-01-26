@@ -11,6 +11,7 @@ So, I write a machine learning on a little project to help me to understand.
 All the source code can be found [here](https://github.com/dinghing/MachineLearn)
 
 It is done by the below steps
+
   * Loading the dataset.
   * Summarizing the dataset.
   * Visualizing the dataset.

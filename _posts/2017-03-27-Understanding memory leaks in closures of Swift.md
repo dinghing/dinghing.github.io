@@ -55,7 +55,6 @@ Here’s one way to do it in swift, first you have a CustomCell that has an acti
 	class CustomCell: UITableViewCell {
   	@IBOutlet weak var customButton: UIButton!
   	var onButtonTap:(()->Void)?
-    
   	@IBAction func buttonTap(){
       	onButtonTap?()
   	  }

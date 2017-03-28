@@ -6,7 +6,7 @@ disqus: y
 
 ---
 OK, so maybe now is the time to understand clearly, how to use python to download image file from the HTML page
-
+{% highlight python%}
 	#-*- coding:utf-8 -*-
 	import re
 	import requests
@@ -33,6 +33,7 @@ OK, so maybe now is the time to understand clearly, how to use python to downloa
     	url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word='+word	+'&ct=201326592&v=flip'
     	result = requests.get(url)
     	dowmloadPic(result.text,word)
+{% endhighlight %}
     		
    Above is the most common  code to download picture from internet and store at local.
    You can find the source code []here](https://github.com/dinghing/MachineLearn/blob/master/faceDetect/getPicture.py)

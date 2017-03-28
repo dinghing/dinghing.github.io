@@ -35,6 +35,6 @@ OK, so maybe now is the time to understand clearly, how to use python to downloa
     	dowmloadPic(result.text,word)
     		
    Above is the most common  code to download picture from internet and store at local.
-   You can find the source code []here](https://github.com/dinghing/MachineLearn/blob/master/faceDetect/getPicture.py)
+   You can find the source code ![here](https://github.com/dinghing/MachineLearn/blob/master/faceDetect/getPicture.py)
    
    However,if we want to go to next page? or use mutilthread to download?

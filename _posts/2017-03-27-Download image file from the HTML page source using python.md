@@ -29,11 +29,12 @@ OK, so maybe now is the time to understand clearly, how to use python to downloa
         		i += 1
 		
 	if __name__ == '__main__':
-    		word = "新垣结衣"
-    		url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word='+word		+'&ct=201326592&v=flip'
-    		result = requests.get(url)
-    		dowmloadPic(result.text,word)
+    	word = "新垣结衣"
+    	url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word='+word	+'&ct=201326592&v=flip'
+    	result = requests.get(url)
+    	dowmloadPic(result.text,word)
     		
    Above is the most common  code to download picture from internet and store at local.
+   You can find the source code []here](https://github.com/dinghing/MachineLearn/blob/master/faceDetect/getPicture.py)
    
    However,if we want to go to next page? or use mutilthread to download?

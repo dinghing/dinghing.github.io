@@ -315,7 +315,7 @@ section.post, section > p {
   padding: 0; }
 
 pre {
-  overflow-x: auto;
+  overflow: scroll;
   padding: 10px 0;
   width: 100%;
   line-height: 1.2em;

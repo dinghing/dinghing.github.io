@@ -53,7 +53,6 @@ If you’ve ever built an iOS app you have had to deal with a UITableView at som
 Here’s one way to do it in swift, first you have a CustomCell that has an action closure that allows you to define what happens when the button is tapped.
 
 	class CustomCell: UITableViewCell {
-  
   	@IBOutlet weak var customButton: UIButton!
   	var onButtonTap:(()->Void)?
     
@@ -65,7 +64,6 @@ Here’s one way to do it in swift, first you have a CustomCell that has an acti
 Then in your ViewController, you define the action you want to have for this button.
 
 	class ViewController: UITableViewController {
-
   	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> 	UITableViewCell {
       	let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! 	CustomCell
       	cell.onButtonTap = {
@@ -116,10 +114,8 @@ Note that, even if you keep a reference to the request or retain a SessionManage
 In this example, you have an UISearchBar, and whenever you change the text in the searchBar you would like to update a label.
 
 	class ViewController: UIViewController {
-  
   	@IBOutlet weak var searchBar: UISearchBar!
   	@IBOutlet weak var label: UILabel!
-  
  	override func viewDidLoad() {
     	searchBar.rx.text.throttle(0.2, scheduler: MainScheduler.instance).subscribe(onNext: 	{(searchText) in
       	self.label.text = "new value: \(searchText)"

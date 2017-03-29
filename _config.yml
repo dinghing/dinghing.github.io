@@ -22,8 +22,7 @@ links:
     url:          /artist/artist
     external:     true   
 highlighter:      rouge
-permalink:        pretty
-markdown:         kramdown
-redcarpet:
-  extensions:
-    - smart
+permalink:        /posts/:title
+defaults:
+  - values:
+      layout: "default"

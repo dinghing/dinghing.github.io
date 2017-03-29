@@ -7,7 +7,7 @@ use_math: true
 ### Beginner to learn machine learning like me
 Books and courses are frustrating. I have read a lot of ariticals and recipes, but never get to see how they all fit together
 So, I write a machine learning on a little project to help me to understand.
-All the source code can be found [here](https://github.com/dinghing/MachineLearn)
+All the source code can be found [here](https://github.com/dinghing/MachineLearn/lesson2)
 
 It is done by the below steps
 

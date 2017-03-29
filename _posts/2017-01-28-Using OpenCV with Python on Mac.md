@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using OpenCV with Python on Mac
 date: 2017-01-28 13:34:31
 disqus: y

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 反转单链表
 date: 2016-09-24 16:27:31
 disqus: y

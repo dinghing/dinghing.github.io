@@ -2,7 +2,6 @@
 title: Download image file from the HTML page source using python
 date: 2017-03-28 12:35:31  
 disqus: y
-
 ---
 OK, so maybe now is the time to understand clearly, how to use python to download image file from the HTML page
 
@@ -34,6 +33,6 @@ OK, so maybe now is the time to understand clearly, how to use python to downloa
     	dowmloadPic(result.text,word)
     		
    Above is the most common  code to download picture from internet and store at local.
-   You can find the source code ![here](https://github.com/dinghing/MachineLearn/blob/master/faceDetect/getPicture.py)
+   You can find the source code [here](https://github.com/dinghing/MachineLearn/blob/master/faceDetect/getPicture.py)
    
    However,if we want to go to next page? or use mutilthread to download?

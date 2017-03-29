@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Implement machine learning in Python(simplest)
 date: 2017-01-25 22:35:31
 disqus: y

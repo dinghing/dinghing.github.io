@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 作为项目管理三年的一点反思
 date: 2016-11-20 21:30:31
 disqus: y

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 在OS X上安装Pyhton3.x的简单方法
 date: 2016-11-18 16:30:31
 disqus: y

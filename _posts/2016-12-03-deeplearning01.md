@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 机器学习－简单的感知机实现
 date: 2016-12-03 16:27:31
 disqus: y

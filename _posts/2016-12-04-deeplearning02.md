@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 机器学习--多层感知机
 date: 2016-12-04 16:27:31
 disqus: y

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: C++与iOS的单例模式实现
 date: 2016-08-31 15:27:31
 disqus: y

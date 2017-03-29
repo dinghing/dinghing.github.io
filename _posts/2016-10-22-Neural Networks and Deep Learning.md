@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 机器学习实战-神经网络和深度学习
 date: 2016-10-21 16:27:31
 disqus: y

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 动态规划
 date: 2016-09-22 16:27:31
 disqus: y

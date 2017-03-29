@@ -1,5 +1,4 @@
 ---
-layout: post
 title: What is normalize and standardize data in deep learning
 date: 2017-01-19 22:35:31
 disqus: y

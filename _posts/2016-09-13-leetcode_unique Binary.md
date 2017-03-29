@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Unique Binary Search Trees I and II解题报告
 date: 2016-09-13 16:27:31
 disqus: y

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 使用命令行（lldb）调试iOS程序
 date: 2016-11-15 22:30:31
 disqus: y

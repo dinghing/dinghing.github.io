@@ -1,6 +1,6 @@
 ---
 title: Face Recognition and autocross with Python 
-date: 2017-03-27 12:35:31  
+date: 2017-03-28 12:35:31  
 disqus: y
 
 ---

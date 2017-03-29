@@ -1,5 +1,4 @@
 ---
-layout: post  
 title: Download image file from the HTML page source using python
 date: 2017-03-28 12:35:31  
 disqus: y

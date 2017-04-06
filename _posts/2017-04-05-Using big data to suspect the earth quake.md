@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using big data to suspect the earth quake
 date: 2017-04-05 22:35:31
 

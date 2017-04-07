@@ -5,6 +5,8 @@ signoff:          dinghing
 disqus_shortname: dinghing
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+gems:
+  - jekyll-seo-tag
 
 links:
   - name:         About me

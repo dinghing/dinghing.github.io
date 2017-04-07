@@ -63,7 +63,7 @@ By the way,the map API for Python is  <code>mpl_toolkits.basemap </code>
 	
 	plt.show()
 
-After this, you will get the affected areas like below
+After this, you will get the affected areas like below  
 ![text](https://dinghing.github.io/images/earthquake/1.png)
 
 ---

@@ -7,8 +7,6 @@ facebook_appid:   # appid for like button, remove from /_includes/share.html if 
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 gems:
   - jekyll-seo-tag
-gems:
-  - jekyll-sitemap
 
 links:
   - name:         About me

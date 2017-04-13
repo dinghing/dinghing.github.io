@@ -25,10 +25,11 @@ Data Exploration
 * Which year has highest earthquake occurrences?     
 
 
-<code>earth_quake = pd.read_csv("../input/database.csv")  </code>  
+		earth_quake = pd.read_csv("../input/database.csv") 
 
-Add some label to the data  
-<code>earth = earth_quake[["Date","Latitude","Longitude","Magnitude","Depth","Type"]]</code>
+Add some label to the data    
+
+	earth = earth_quake[["Date","Latitude","Longitude","Magnitude","Depth","Type"]]
 
 	Date	Latitude	Longitude	Magnitude	Depth	Type
 	23407	12/28/2016	38.3917	  -118.8941	5.6	12.30   Earthquake  
@@ -63,7 +64,7 @@ By the way,the map API for Python is  <code>mpl_toolkits.basemap </code>
 	
 	plt.show()
 
-After this, you will get the affected areas like below  
+After this, you will get the affected areas like below    
 ![text](https://dinghing.github.io/images/earthquake/1.png)
 
 ---

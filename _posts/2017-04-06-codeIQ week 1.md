@@ -24,5 +24,18 @@ disqus: y
 問題を解決するポイントは6と9の処理です。    
 そして計算データは上記の例をベースに良い
 
----
-ソースコード
+---  
+	def count(n):
+	res = 0
+	#nums = [6,5,4,3,2,1
+	if n == 2:
+		return 21
+	for i in range(n/2):
+		m1 = n-2*(i+1)
+		m3 = i
+		print m1,m3
+		res += 21*pow(7,m1)*pow(7,m3)
+	if n%2 != 0:
+		res += pow(7,i+1)
+	return res
+	print count(4)
